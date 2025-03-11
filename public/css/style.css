@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "power-grotesk";
+  src: url("./fonts/PowerGrotesk-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "power-grotesk", sans-serif;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+body {
+  background-color: var(--color-white);
+}
+
+/* Defining roots */
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  /* colors */
+
+  /* Black & White */
+  /* --color-white: white;
+  --color-black: black;  */
+
+  /* Shark & Primrose */
+  /* --color-white: #2a2a2e;
+  --color-black: #ebf29c; */
+
+  /* Moon mist & Blur ribbon */
+  --color-white: #364ce4;
+  --color-black: #daddd0;
+
+  /* Midnight blue & Grain brown */
+  /* --color-white: #ccffbc;
+  --color-black: #053264; */
+
+  /* Font sizes */
+  --font-large: 3rem;
+  --font-big: 2.5rem;
+  --font-medium: 2rem;
+  --font-small: 1.5rem;
+  --font-xs: 1rem;
+}
