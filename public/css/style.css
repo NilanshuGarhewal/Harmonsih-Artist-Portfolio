@@ -5,6 +5,21 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "kingsguard";
+  src: url("./fonts/KingsguardCalligraphy_PERSONAL_USE_ONLY.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "restrike";
+  src: url("./fonts/restrikedemo-8o44m.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +31,8 @@
 
 body {
   background-color: var(--color-white);
+  position: relative;
+  cursor: none;
 }
 
 /* Defining roots */
@@ -28,20 +45,40 @@ html {
   /* colors */
 
   /* Black & White */
-  /* --color-white: white;
-  --color-black: black;  */
+  --color-black: #eee;
+  --color-white: #111; 
+
+  /* Coffee brown, silver gray */
+  /* --color-white: #6a5a4b;
+  --color-black: #e9e9ea; */
+
+  /* deep charcole , muted lilac */
+  /* --color-white: #2e2e2e;
+  --color-black: #d6cfe1; */
+
+  /* antique white, puce */
+  /* --color-black: #faebd7;
+  --color-white: #cc8899; */
+
+  /* --color-black: #411e16;
+  --color-white: #f3ecdc; */
 
   /* Shark & Primrose */
   /* --color-white: #2a2a2e;
   --color-black: #ebf29c; */
+  
 
   /* Moon mist & Blur ribbon */
-  --color-white: #364ce4;
-  --color-black: #daddd0;
+  /* --color-white: #364ce4;
+  --color-black: #daddd0; */
 
-  /* Midnight blue & Grain brown */
-  /* --color-white: #ccffbc;
-  --color-black: #053264; */
+  /* Timberwolf */
+  /* --color-black: #227f85;
+  --color-white: #e0dbd5; */
+
+  /* queen pink */
+  /* --color-black: #ff90e0;
+  --color-white: #263033; */
 
   /* Font sizes */
   --font-large: 3rem;

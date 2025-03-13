@@ -1,0 +1,74 @@
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
+  gap: 10rem;
+  padding: 2rem 5rem 5rem;
+  width: fit-content;
+}
+
+.image-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.image-box:nth-of-type(2n) {
+  border-radius: 50%; /* Makes it a perfect circle */
+  aspect-ratio: 1/1; /* Ensures it's a perfect circle */
+  object-fit: cover;
+}
+
+/* Darken image on hover */
+.image-box:hover img {
+  filter: brightness(50%);
+  transform: scale(1.4);
+  /* border-radius: 100%; */
+}
+
+/* Info text that follows the cursor smoothly */
+.image-box .info-box {
+  position: absolute;
+  /* background: rgba(0, 0, 0, 0.7); */
+  color: var(--color-black);
+  padding: 1rem;
+  text-align: center;
+  font-size: var(--font-small);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.2s ease-out;
+  white-space: nowrap;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  .image-container {
+    padding: 2rem;
+    gap: 5rem;
+  }
+
+  .image-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+
+  .image-box:nth-child(n + 4) {
+    /* Selects 4th, 5th, and 6th images */
+    display: none;
+  }
+
+  .image-container {
+    grid-template-columns: repeat(1, 1fr); /* Adjust layout for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+  }
+}

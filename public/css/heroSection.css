@@ -1,0 +1,138 @@
+.name-container {
+  width: 100%;
+  height: auto;
+  /* background-color: red; */
+  color: var(--color-black);
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  /* cursor: none; */
+}
+
+.n-artist-name,
+.n-by-name,
+.n-name-name {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* background-color: blue; */
+}
+
+.n-artist-name {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.n-paragraph {
+  font-size: clamp(3rem, 10vw, 12rem);
+}
+
+.change-font {
+  font-family: "restrike", sans-serif;
+}
+
+.span-add-fill {
+  font-size: var(--font-medium);
+  border: 2px solid var(--color-black);
+  padding: 2rem;
+  border-radius: 100%;
+  position: relative;
+  z-index: 300;
+  overflow: hidden;
+}
+
+.span-add-fill:hover {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+.n-by-name {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.n-name-name {
+  width: 100%;
+  height: 100%;
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+
+.my-name-div {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+}
+
+.n-info {
+  width: 40%;
+  /* height: auto; */
+  /* background-color: green; */
+  padding: 2rem 0;
+}
+
+.n-info div hr {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  height: 1px;
+  background-color: var(--color-black);
+}
+
+.n-info-div {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  /* background-color: red; */
+  width: 100%;
+  height: 100%;
+}
+
+.n-info-music {
+  width: 100%;
+  height: 100%;
+  font-size: var(--font-medium);
+  letter-spacing: 0.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0;
+  transition: padding 0.3s ease-in-out;
+}
+
+.n-info-music:hover {
+  padding: 0 2rem;
+}
+
+/* Making it responsive */
+
+@media (max-width: 1480px) {
+  .n-info {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .name-container {
+    padding: 2rem;
+  }
+  .span-add-fill {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .name-container {
+    display: none;
+  }
+}
