@@ -1,16 +1,16 @@
 .curser-dot {
   width: 1rem;
   height: 1rem;
-  background-color: var(--color-black);
-  /* mix-blend-mode: difference; */
+  background-color: var(--color-white);
+  mix-blend-mode: difference;
 }
 
 .curser-border {
   width: 10rem;
   height: 10rem;
   border: 2px solid var(--color-black);
-  /* border-color: white; */
-  /* mix-blend-mode: difference; */
+  border-color: white;
+  mix-blend-mode: difference;
   /* opacity: .5; */
 }
 
@@ -27,7 +27,7 @@
 
 .fixed-name {
   position: fixed;
-  top: 50%;
+  top: 50%; 
   right: 0;
   /* bottom: 50%; */
   transform: translateY(-50%);

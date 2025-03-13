@@ -45,8 +45,16 @@ html {
   /* colors */
 
   /* Black & White */
-  --color-black: #eee;
-  --color-white: #111; 
+  --color-black: #111;
+  --color-white: #eee;
+
+  /* off white and olive */
+  /* --color-white: #f3ede3;
+  --color-black: #45644a; */
+
+  /* off white and olive */
+  /* --color-white: #f4ecfe;
+  --color-black: #9985f3; */
 
   /* Coffee brown, silver gray */
   /* --color-white: #6a5a4b;
@@ -60,13 +68,9 @@ html {
   /* --color-black: #faebd7;
   --color-white: #cc8899; */
 
-  /* --color-black: #411e16;
-  --color-white: #f3ecdc; */
-
   /* Shark & Primrose */
   /* --color-white: #2a2a2e;
   --color-black: #ebf29c; */
-  
 
   /* Moon mist & Blur ribbon */
   /* --color-white: #364ce4;

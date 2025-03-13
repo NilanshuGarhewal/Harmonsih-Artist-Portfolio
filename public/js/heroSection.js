@@ -1,16 +1,8 @@
-// gsap.registerPlugin(ScrollTrigger);
+const myArtistName = new SplitType(".my-artist-name");
 
-// gsap.to(".animate-text", {
-//   scrollTrigger: {
-//     trigger: ".animate-text",
-//     start: "top 70%",
-//     end: "bottom 200px",
-//     markers: true,
-//     scrub: true,
-//     pin: ".c",
-//     toggleActions: "restart pause reverse none",
-//   },
-//   x: 500,
-//   //   rotation: 360,
-//   duration: 3,
-// });
+gsap.to(".char", {
+  y: 5,
+  stagger: 0.05,
+  delay: 0.2,
+  duration: 0.1,
+});

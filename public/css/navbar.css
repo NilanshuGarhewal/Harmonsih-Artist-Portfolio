@@ -9,8 +9,9 @@
   padding: 0 5rem;
   position: sticky;
   top: 0;
-  z-index: 990;
-  color: var(--color-black);
+  z-index: 900;
+  color: var(--color-white);
+  mix-blend-mode: difference;
   /* background-color: black; */
   /* cursor: none; */
 }
@@ -74,10 +75,12 @@
   outline: none;
   border: none;
   background: none;
-  border-bottom: 2px solid var(--color-black);
+  border-bottom: 2px solid var(--color-white);
   letter-spacing: 1px;
   width: 20rem;
-  color: var(--color-black);
+  color: var(--color-white);
+  mix-blend-mode: difference;
+
 }
 
 .nav-tools {
@@ -104,7 +107,7 @@
   font-size: var(--font-small);
   letter-spacing: 1px;
   margin-left: 5rem;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .nav-tools ul li span {

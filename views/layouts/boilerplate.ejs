@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="css/toggleMenu.css" />
     <link rel="stylesheet" href="css/heroSection.css" />
     <link rel="stylesheet" href="css/curser.css" />
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/aboutSection.css" />
+    <link rel="stylesheet" href="css/transition.css" />
 
     <!-- Google icons link -->
     <link
@@ -32,15 +34,25 @@
     <!-- Hero section -->
     <%- include("../includes/curser.ejs") %>
 
+    <!-- Transition -->
+    <!-- <%- include("../includes/transition.ejs") %> -->
+
     <!-- main body -->
     <div class="container"><%- body %></div>
 
+    <!-- Hero section -->
+    <%- include("../includes/aboutSection.ejs") %>
+
     <!-- GSAP JS Animation Library -->
+    <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
 
     <script src="js/navbar.js"></script>
     <script src="js/heroSection.js"></script>
     <script src="js/curser.js"></script>
+    <script src="js/aboutSection.js"></script>
+    <script src="js/transition.js"></script>
   </body>
 </html>
