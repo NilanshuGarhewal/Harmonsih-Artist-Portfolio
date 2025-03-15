@@ -31,3 +31,19 @@ changeView.addEventListener("click", () => {
 
   //   Change view
 });
+
+const goToProject = document.querySelectorAll(".span-add-fill");
+
+const goToProject2 = document.querySelector(".go-to-project");
+
+const projectSection = document.querySelector(".project-section");
+
+goToProject.forEach((element) => {
+  element.addEventListener("click", () => {
+    projectSection.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+goToProject2.addEventListener("click", () => {
+  projectSection.scrollIntoView({ behavior: "smooth" });
+});

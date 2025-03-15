@@ -18,7 +18,7 @@ gsap.to(".side-slide-animation", {
   scrollTrigger: {
     trigger: ".side-slide-animation",
     toggleActions: "restart pause reverse pause",
-    start: "20% 85%",
+    start: "20% 80%",
     end: "bottom 40%",
     scrub: true,
     markers: false,
@@ -32,7 +32,7 @@ gsap.to(".side-slide-animation-3", {
   scrollTrigger: {
     trigger: ".side-slide-animation-3",
     toggleActions: "restart pause reverse pause",
-    start: "20% 85%",
+    start: "20% 80%",
     end: "bottom 40%",
     scrub: true,
     markers: false,

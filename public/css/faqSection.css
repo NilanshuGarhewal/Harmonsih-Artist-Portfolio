@@ -1,7 +1,24 @@
+.faq-section {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-black);
+  padding: 0 5rem;
+  bottom: 0;
+  scroll-behavior: smooth;
+  position: relative;
+  color: var(--color-white);
+  border-radius: 4rem 4rem 0 0;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
 .faq-author {
   border-top: 2px solid var(--color-white);
   width: 100%;
-  height: auto;
+  height: 100vh;
   /* background-color: purple; */
   position: static;
   top: 7rem;

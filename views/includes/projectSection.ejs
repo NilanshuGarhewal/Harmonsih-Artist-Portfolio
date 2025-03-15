@@ -5,19 +5,19 @@
         <span class="material-symbols-sharp bolt-icon"> bolt </span>
         <!-- <hr /> -->
         <span class="project-name-span">
-          <p>PROJECTS</p>
+          <p>BROWSE</p>
         </span>
       </div>
 
-      <div class="view-project-div">
+      <!-- <div class="view-project-div">
         <span class="material-symbols-sharp"> arrow_right_alt </span>
-        <p class="p-view-remix">View Remixes</p>
-      </div>
+        <p class="p-view-all">All View</p>
+      </div> -->
     </div>
 
     <div class="view-project-div">
       <span class="material-symbols-sharp"> arrow_right_alt </span>
-      <p class="p-view-all">All View</p>
+      <p class="p-view-remix">View Remixes</p>
     </div>
   </div>
 
@@ -34,14 +34,14 @@
       <div><p>Tags</p></div>
 
       <div>
-        <p>Details</p>
+        <p>Video</p>
       </div>
     </div>
 
     <div class="music-typebeat-details">
       <% for( let i = 0; i < 5; i++ ) { %>
       <section class="music-sep-section">
-        <div><p>Lost In You</p></div>
+        <div><p><%= i+1 %>. Lost In You</p></div>
 
         <div>
           <p>Hip Hop, Pop</p>
@@ -50,7 +50,14 @@
         <div><p>Soulful, Hip Hop, Pop</p></div>
 
         <div>
-          <p>More Details</p>
+          <iframe
+            class="lazy-iframe"
+            src="https://www.youtube.com/embed/kwBT6bHnAi8?si=hlc7XASp6hHLzpg4"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
         </div>
       </section>
       <% } %>
@@ -59,7 +66,7 @@
     <div class="music-remix-details">
       <% for( let i = 0; i < 5; i++ ) { %>
       <section class="music-sep-section">
-        <div><p>Nadaaniyan</p></div>
+        <div><p><%= i+1 %>. Nadaaniyan</p></div>
 
         <div>
           <p>Pop, I-Pop</p>
@@ -68,10 +75,46 @@
         <div><p>Soulful, Pop</p></div>
 
         <div>
-          <p>More Details</p>
+          <iframe
+            class="lazy-iframe"
+            src="https://www.youtube.com/embed/MmTIdJCq1Fk?si=EK6aOlZIIG-8UBIe"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
         </div>
       </section>
       <% } %>
     </div>
   </div>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      let iframes = document.querySelectorAll(".lazy-iframe");
+
+      if (iframes.length === 0) {
+          console.error("No iframes found with class 'lazy-iframe'");
+          return;
+      }
+
+      let observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  let iframe = entry.target;
+                  let src = iframe.getAttribute("data-src");
+
+                  if (!iframe.src) {
+                      iframe.src = src; // Assign real video URL
+                      console.log("Loaded:", src);
+                  }
+
+                  observer.unobserve(iframe); // Stop observing once loaded
+              }
+          });
+      }, { threshold: 0.5 });
+
+      iframes.forEach(iframe => observer.observe(iframe));
+  });
+</script>

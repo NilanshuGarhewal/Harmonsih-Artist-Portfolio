@@ -201,16 +201,19 @@
   height: 100%;
   width: 100%;
   align-items: end;
+  margin-right: 1rem;
 }
 
-.menu-links ul li p {
+.menu-links ul li a {
   letter-spacing: 0.2;
   transition: letter-spacing 0.3s ease-in-out;
   margin-left: 0.5rem;
+  color: var(--color-white);
+  text-decoration: none;
 }
 
-.menu-links ul li p:hover {
-  letter-spacing: 0.5rem;
+.menu-links ul li a:hover {
+  /* letter-spacing: 0.5rem; */
   background-color: var(--color-white);
   color: var(--color-black);
 }
