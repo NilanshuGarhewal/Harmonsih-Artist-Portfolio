@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Nadaaniyan",
+    "genre": "Pop, Trap",
+    "mood": "Chill, Emotional",
+    "link": "https://www.youtube.com/watch?v=yourvideoID"
+    
+  },
+  {
+    "name": "My Next Song",
+    "genre": "K-Pop, EDM",
+    "mood": "Energetic",
+    "link": "https://www.youtube.com/watch?v=nextvideoID"
+  }
+]
