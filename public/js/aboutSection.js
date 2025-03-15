@@ -1,6 +1,6 @@
-const aboutInfo = new SplitType(".about-info", { types: "words" });
-
 gsap.registerPlugin(ScrollTrigger);
+
+// const aboutInfo = new SplitType(".animation", { types: "words" });
 
 gsap.from(".word", {
   scrollTrigger: {
@@ -14,25 +14,11 @@ gsap.from(".word", {
   stagger: 0.5,
 });
 
-// const projectInfo = new SplitType(".project-info", { types: "words" });
-
-// gsap.from(".word", {
-//   scrollTrigger: {
-//     trigger: ".word",
-//     start: "top 70%",
-//     end: "top 20%",
-//     scrub: true,
-//     markers: false,
-//   },
-//   opacity: 0.2,
-//   stagger: 0.5,
-// });
-
 gsap.to(".side-slide-animation", {
   scrollTrigger: {
     trigger: ".side-slide-animation",
     toggleActions: "restart pause reverse pause",
-    start: "20% 80%",
+    start: "20% 85%",
     end: "bottom 40%",
     scrub: true,
     markers: false,
@@ -46,7 +32,7 @@ gsap.to(".side-slide-animation-3", {
   scrollTrigger: {
     trigger: ".side-slide-animation-3",
     toggleActions: "restart pause reverse pause",
-    start: "20% 80%",
+    start: "20% 85%",
     end: "bottom 40%",
     scrub: true,
     markers: false,

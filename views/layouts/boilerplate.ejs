@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/transition.css" />
     <link rel="stylesheet" href="css/projectSection.css" />
     <link rel="stylesheet" href="css/faqSection.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 
     <!-- Google icons link -->
     <link
@@ -31,10 +32,8 @@
     <%-include("../includes/toggleMenu.ejs") %>
 
     <!-- Hero section -->
-    <%- include("../includes/heroSection.ejs") %>
-
-    <!-- Hero section -->
     <%- include("../includes/curser.ejs") %>
+
 
     <!-- Transition -->
     <!-- <%- include("../includes/transition.ejs") %> -->
@@ -42,14 +41,8 @@
     <!-- main body -->
     <div class="container"><%- body %></div>
 
-    <!-- Hero section -->
-    <%- include("../includes/aboutSection.ejs") %>
-
-    <!-- Project section -->
-    <%- include("../includes/projectSection.ejs") %>
-
     <!--  -->
-    <%- include("../includes/faqSection.ejs") %>
+    <%- include("../includes/footer.ejs") %>
 
     <!-- GSAP JS Animation Library -->
     <script src="https://unpkg.com/split-type"></script>
