@@ -54,8 +54,133 @@
 <!-- Hero section -->
 <%- include("../includes/aboutSection.ejs") %>
 
-<!-- Project section -->
-<%- include("../includes/projectSection.ejs") %>
+<div class="project-section">
+  <div class="project-name side-slide-animation-2">
+    <div>
+      <div class="project-name-container">
+        <span class="material-symbols-sharp bolt-icon"> bolt </span>
+        <!-- <hr /> -->
+        <span class="project-name-span">
+          <p>BROWSE</p>
+        </span>
+      </div>
+
+      <!-- <div class="view-project-div">
+        <span class="material-symbols-sharp"> arrow_right_alt </span>
+        <p class="p-view-all">All View</p>
+      </div> -->
+    </div>
+
+    <div class="view-project-div">
+      <span class="material-symbols-sharp"> arrow_right_alt </span>
+      <p class="p-view-remix">View Remixes</p>
+    </div>
+  </div>
+
+  <!-- Main project -->
+
+  <div class="music-projects">
+    <div class="project-section-names">
+      <div><p>Name</p></div>
+
+      <div>
+        <p>Gerne</p>
+      </div>
+
+      <div><p>Tags</p></div>
+
+      <div>
+        <p>Videos</p>
+      </div>
+    </div>
+
+    <div class="music-typebeat-details">
+      <% let counter = 1; %> <% songs.forEach(song => { %>
+      <section class="music-sep-section">
+        <div><p><%= counter++ %>. <%= song.songTitle %></p></div>
+
+        <div>
+          <p><%= song.songGenre %></p>
+        </div>
+
+        <div>
+          <p><%= song.songTags %></p>
+        </div>
+
+        <div>
+          <iframe
+            class="lazy-iframe"
+            src="https://www.youtube.com/embed/<%= song.songLink %>"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </section>
+      <% }); %>
+    </div>
+
+    <div class="music-remix-details">
+      <% let number = 1; %> <% remix.forEach(remix => { %>
+      <section class="music-sep-section">
+        <div><p><%= number++ %>. <%= remix.songTitle %></p></div>
+
+        <div>
+          <p><%= remix.songGenre %></p>
+        </div>
+
+        <div>
+          <p><%= remix.songTags %></p>
+        </div>
+
+        <div>
+          <iframe
+            class="lazy-iframe"
+            src="https://www.youtube.com/embed/<%= remix.songLink %>"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </section>
+      <% }); %>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let iframes = document.querySelectorAll(".lazy-iframe");
+
+    if (iframes.length === 0) {
+      console.error("No iframes found with class 'lazy-iframe'");
+      return;
+    }
+
+    let observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            let iframe = entry.target;
+            let src = iframe.getAttribute("data-src");
+
+            if (!iframe.src) {
+              iframe.src = src; // Assign real video URL
+              console.log("Loaded:", src);
+            }
+
+            observer.unobserve(iframe); // Stop observing once loaded
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    iframes.forEach((iframe) => observer.observe(iframe));
+  });
+</script>
 
 <!--  -->
 <%- include("../includes/faqSection.ejs") %>

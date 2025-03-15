@@ -8,3 +8,6 @@ package-lock.json
 fonts/
 public/css/fonts/
 views/page/images/
+firebase-key.json
+
+note.txt
