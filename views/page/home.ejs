@@ -1,53 +1,94 @@
 <% layout("/layouts/boilerplate.ejs") %>
 
 <!-- Hero section -->
-<%- include("../includes/heroSection.ejs") %>
+<div class="name-container">
+  <div class="n-artist-name">
+    <p class="n-paragraph">HARMONI<span class="change-font">Sh</span></p>
+    <span class="span-add-fill">
+      <p>remixes</p>
+    </span>
+    <span class="span-add-fill">
+      <p>typebeats</p>
+    </span>
+  </div>
+  <div class="n-by-name">
+    <span class="span-add-fill">
+      <p>music</p>
+    </span>
+    <p class="n-paragraph">by</p>
+    <span class="span-add-fill">
+      <p>explore</p>
+    </span>
+  </div>
+  <div class="n-name-name">
+    <div class="n-info">
+      <div class="n-info-div">
+        <hr />
+        <div class="n-info-music">
+          <p>total typebeats</p>
+          <p class="go-to-end"><%= songs.length %></p>
+        </div>
+        <hr />
+        <div class="n-info-music">
+          <span><p>total remixes</p></span>
+          <span><p class="go-to-end"><%= remix.length %></p></span>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <div class="my-name-div">
+      <p class="n-paragraph">nilanshu garhewal</p>
+    </div>
+  </div>
+</div>
+
+<!--  -->
 
 <div class="image-container">
   <div class="image-box">
     <img
       class="front-images"
+      src="https://i.pinimg.com/474x/c2/c3/43/c2c3436402b4015f26821fa9cdfe365d.jpg"
+    />
+
+    <div class="info-box">Coming Soon (Prod. Harmonish)</div>
+  </div>
+  <div class="image-box">
+    <img
+      class="front-images"
+      src="https://i.pinimg.com/474x/59/f8/69/59f8694cb223061869e203bb38c059ed.jpg"
+    />
+    <div class="info-box">Coming Soon (Prod. Harmonish)</div>
+  </div>
+  <div class="image-box">
+    <img
+      class="front-images"
+      src="https://i.pinimg.com/474x/27/b1/05/27b105523f4f52ce94aaa04056121b9a.jpg"
+    />
+
+    <div class="info-box">Coming Soon (Prod. Harmonish)</div>
+  </div>
+  <div class="image-box">
+    <img
+      class="front-images"
+      src="https://i.pinimg.com/474x/d7/dc/24/d7dc245537dd26b42116ffb7ff70eff1.jpg"
+    />
+    <div class="info-box">Coming Soon (Prod. Harmonish)</div>
+  </div>
+  <div class="image-box">
+    <img
+      class="front-images"
       src="https://i.pinimg.com/474x/23/d2/0d/23d20d23c19e863ffcc0516baeb6f3f4.jpg"
     />
 
-    <div class="info-box">Info about Image 1</div>
+    <div class="info-box">Coming Soon (Prod. Harmonish)</div>
   </div>
   <div class="image-box">
     <img
       class="front-images"
-      src="https://i.pinimg.com/474x/dc/8b/6d/dc8b6da66ec0cd2952d8d214376ab97d.jpg"
+      src="https://i.pinimg.com/474x/08/3e/16/083e166805adbdf79763ade148f8bb13.jpg"
     />
-    <div class="info-box">Info about Image 2</div>
-  </div>
-  <div class="image-box">
-    <img
-      class="front-images"
-      src="https://i.pinimg.com/474x/23/d2/0d/23d20d23c19e863ffcc0516baeb6f3f4.jpg"
-    />
-
-    <div class="info-box">Info about Image 3</div>
-  </div>
-  <div class="image-box">
-    <img
-      class="front-images"
-      src="https://i.pinimg.com/474x/dc/8b/6d/dc8b6da66ec0cd2952d8d214376ab97d.jpg"
-    />
-    <div class="info-box">Info about Image 4</div>
-  </div>
-  <div class="image-box">
-    <img
-      class="front-images"
-      src="https://i.pinimg.com/474x/23/d2/0d/23d20d23c19e863ffcc0516baeb6f3f4.jpg"
-    />
-
-    <div class="info-box">Info about Image 5</div>
-  </div>
-  <div class="image-box">
-    <img
-      class="front-images"
-      src="https://i.pinimg.com/474x/dc/8b/6d/dc8b6da66ec0cd2952d8d214376ab97d.jpg"
-    />
-    <div class="info-box">Info about Image 6</div>
+    <div class="info-box">Coming Soon (Prod. Harmonish)</div>
   </div>
 </div>
 
@@ -80,7 +121,7 @@
   <!-- Main project -->
 
   <div class="music-projects">
-    <div class="project-section-names">
+    <!-- <div class="project-section-names">
       <div><p>Name</p></div>
 
       <div>
@@ -92,21 +133,11 @@
       <div>
         <p>Videos</p>
       </div>
-    </div>
+    </div> -->
 
     <div class="music-typebeat-details">
       <% let counter = 1; %> <% songs.forEach(song => { %>
       <section class="music-sep-section">
-        <div><p><%= counter++ %>. <%= song.songTitle %></p></div>
-
-        <div>
-          <p><%= song.songGenre %></p>
-        </div>
-
-        <div>
-          <p><%= song.songTags %></p>
-        </div>
-
         <div>
           <iframe
             class="lazy-iframe"
@@ -117,6 +148,15 @@
           >
           </iframe>
         </div>
+        <div><p><%= counter++ %>. <%= song.songTitle %></p></div>
+
+        <div>
+          <p class="mini">Genre: <b><%= song.songGenre %></b></p>
+        </div>
+
+        <div>
+          <p class="mini">Tags: <b><%= song.songTags %></b></p>
+        </div>
       </section>
       <% }); %>
     </div>
@@ -124,16 +164,6 @@
     <div class="music-remix-details">
       <% let number = 1; %> <% remix.forEach(remix => { %>
       <section class="music-sep-section">
-        <div><p><%= number++ %>. <%= remix.songTitle %></p></div>
-
-        <div>
-          <p><%= remix.songGenre %></p>
-        </div>
-
-        <div>
-          <p><%= remix.songTags %></p>
-        </div>
-
         <div>
           <iframe
             class="lazy-iframe"
@@ -143,6 +173,15 @@
             allowfullscreen
           >
           </iframe>
+        </div>
+        <div><p><%= number++ %>. <%= remix.songTitle %></p></div>
+
+        <div>
+          <p class="mini">Genre: <b><%= remix.songGenre %></b></p>
+        </div>
+
+        <div>
+          <p class="mini">Tags: <b><%= remix.songTags %></b></p>
         </div>
       </section>
       <% }); %>

@@ -22,10 +22,10 @@ changeView.addEventListener("click", () => {
   if (changeView.innerText == "View Typebeats") {
     changeView.innerText = "View Remix";
     remixView.style.display = "none";
-    typebeatView.style.display = "block";
+    typebeatView.style.display = "grid";
   } else {
     changeView.innerText = "View Typebeats";
-    remixView.style.display = "block";
+    remixView.style.display = "grid";
     typebeatView.style.display = "none";
   }
 

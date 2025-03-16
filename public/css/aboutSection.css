@@ -1,18 +1,13 @@
 .about-section {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: var(--color-black);
-  padding: 0 5rem 5rem;
-  bottom: 0;
+  padding: 0 5rem;
   scroll-behavior: smooth;
-  position: relative;
   color: var(--color-white);
-  border-radius: 4rem 4rem 0 0;
-  overflow-y: scroll;
+  /* border-radius: 4rem 4rem 0 0; */
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
 .about-name {
@@ -26,6 +21,7 @@
   position: sticky;
   padding-top: 6rem;
   top: 0;
+  border-bottom: 2px solid var(--color-white);
 }
 
 .about-name .bolt-icon {
@@ -41,7 +37,7 @@
 }
 
 .about-author {
-  border-top: 2px solid var(--color-white);
+  /* border-top: 2px solid var(--color-white); */
   width: 100%;
   height: auto;
   /* background-color: purple; */

@@ -5,24 +5,9 @@ const app = express();
 const ejs = require("ejs");
 const ejsMate = require("ejs-mate");
 const path = require("path");
-const mongoose = require("mongoose");
 // const admin = require("firebase-admin");
 
 const port = 8080;
-
-// ----------------------------
-// 2️⃣ MongoDB Setup
-const MONGO_URL = "mongodb://127.0.0.1:27017/harmonish";
-
-async function connectDB() {
-  try {
-    await mongoose.connect(MONGO_URL);
-    console.log("✅ Connected to MongoDB.");
-  } catch (err) {
-    console.error("❌ MongoDB Connection Error:", err);
-    process.exit(1); // Stop server if DB connection fails
-  }
-}
 
 // ----------------------------
 // 3️⃣ Firebase Firestore Setup
@@ -83,8 +68,6 @@ app.get("/", async (req, res) => {
 
 // ----------------------------
 // 6️⃣ Start Server AFTER DB is connected
-connectDB().then(() => {
-  app.listen(port, () => {
-    console.log(`🚀 Server is running on http://localhost:${port}`);
-  });
+app.listen(port, () => {
+  console.log(`🚀 Server is running on http://localhost:${port}`);
 });
