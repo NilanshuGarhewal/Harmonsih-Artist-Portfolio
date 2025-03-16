@@ -5,6 +5,7 @@ Welcome to **Harmonish - Music Artist Portfolio**, a personal website showcasing
 ---
 
 ## 🌟 Features
+
 - **🎶 Dynamic Music List** – Songs are stored in a JSON file and fetched dynamically.
 - **📄 Easy Updates** – Just update the `songs.json` file in GitHub, and the site will auto-refresh.
 - **🎨 Clean & Minimal Design** – Aesthetic layout with dark mode styling.
@@ -13,11 +14,13 @@ Welcome to **Harmonish - Music Artist Portfolio**, a personal website showcasing
 ---
 
 ## 🚀 Live Demo
-[🔗 View Portfolio Here](#) *(Replace with actual URL once hosted)*
+
+[🔗 View Portfolio Here](#) _(Replace with actual URL once hosted)_
 
 ---
 
 ## 📁 Project Structure
+
 ```
 Harmonish-Portfolio/
 │── page/        # Main webpage
@@ -29,24 +32,26 @@ Harmonish-Portfolio/
 ```
 
 ## 📌 Future Enhancements
-✅ **Search & Filter Songs** – Allow users to search by genre/mood. 
+
+✅ **Search & Filter Songs** – Allow users to search by genre/mood.
 ✅ **Like & Share Buttons** – Let users engage with the music.  
-✅ **Dark & Light Mode Toggle** – Personalize UI experience.  
+✅ **Dark & Light Mode Toggle** – Personalize UI experience.
 
 ---
 
 ## 💡 Technologies Used
+
 - **Express & Ejs** – Responsive layout & styling
 - **JavaScript (Vanilla JS)** – Fetch and display song data
 - **Firebase** – Easy data management
 
-
 ---
 
 ## 🔥 Author & Credits
+
 👤 **Harmonish (Nilanshu Garhewal)**  
 🎵 Music Producer & Developer  
-🔗 [YouTube](https://www.youtube.com/@harmonish) • [Instagram](https://www.instagram.com/harmonishbeats/) • [GitHub](https://github.com/YOUR_GITHUB_USERNAME)
+🔗 [YouTube](https://www.youtube.com/@harmonish) • [Instagram](https://www.instagram.com/harmonishbeats/) • [LinkedIn](https://www.linkedin.com/in/nilanshugarhewal/)
 
 ---
 
