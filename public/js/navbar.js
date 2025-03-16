@@ -27,6 +27,8 @@ openMenu.addEventListener("click", () => {
 
 // -----------------------------------------------
 
+// scrolling to a section
+
 openMenu.addEventListener("click", () => {
   if (openClose.innerText == "MENU") {
     openClose.innerText = "Close";
@@ -42,6 +44,8 @@ openMenu.addEventListener("click", () => {
 });
 
 // -----------------------------------------------
+
+// scrolling to a section
 
 const goToAbout = document.querySelector(".go-to-about");
 const goToFaq = document.querySelector(".go-to-faq");
@@ -59,17 +63,12 @@ goToFaq.addEventListener("click", () => {
 
 // -----------------------------------------------
 
+// opening menu and choosing a section
+
 const aGoToAbout = document.querySelector(".go-to-a-section");
 const aGoToFaq = document.querySelector(".go-to-f-section");
 const aGoToProject = document.querySelector(".go-to-b-section");
 const aGoToHero = document.querySelector(".go-to-h-section");
-
-// const closeMenu = document.querySelector(".close-menu");
-// const toggleMenu = document.querySelector(".toggle-menu");
-// const openMenu = document.querySelector(".open-menu");
-
-// const openClose = document.querySelector(".open-close");
-// const openCloseId = document.querySelector("#open-close");
 
 function closeMenuFunction() {
   toggleMenu.classList.toggle("active");

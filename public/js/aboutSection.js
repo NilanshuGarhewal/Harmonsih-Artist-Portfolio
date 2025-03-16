@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
-// const aboutInfo = new SplitType(".animation", { types: "words" });
+const aboutInfo = new SplitType(".create-animation", { types: "words" });
 
 gsap.from(".word", {
   scrollTrigger: {

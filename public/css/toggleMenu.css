@@ -5,17 +5,14 @@
   height: 100vh;
   position: fixed;
   background-color: var(--color-black);
-  /* backdrop-filter: blur(5px); */
   z-index: 1090;
   letter-spacing: 2px;
-  /* color: #000 !important; */
   color: var(--color-white);
   bottom: 0;
   transition: bottom 1s ease-in-out;
   display: flex;
   flex-direction: column;
   scroll-behavior: smooth;
-  /* cursor: default !important; */
 }
 
 .menu-nav {
@@ -112,7 +109,7 @@
 }
 
 .menu-tools ul li::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -213,7 +210,6 @@
 }
 
 .menu-links ul li a:hover {
-  /* letter-spacing: 0.5rem; */
   background-color: var(--color-white);
   color: var(--color-black);
 }
