@@ -15,7 +15,12 @@ const admin = require("firebase-admin");
 
 // Initialize Firebase Admin SDK
 //const serviceAccount = require("./firebase-key.json"); // Update this path
-const serviceAccount = JSON.parse(process.env.FIREBASE_CREDENTIALS); // Update this path
+// const serviceAccount = JSON.parse(process.env.FIREBASE_CREDENTIALS); // Update this path
+
+const serviceAccount = JSON.parse(process.env.FIREBASE_CREDENTIALS);
+
+// Fix the private key formatting
+serviceAccount.private_key = serviceAccount.private_key.replace(/\\n/g, "\n");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
