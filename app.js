@@ -14,11 +14,11 @@ const port = 8080;
 const admin = require("firebase-admin");
 
 // Initialize Firebase Admin SDK
-const serviceAccount = require("./firebase-key.json"); // Update this path
+//const serviceAccount = require("./firebase-key.json"); // Update this path
+const serviceAccount = JSON.parse(process.env.FIREBASE_CREDENTIALS); // Update this path
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  // databaseURL: "https://your-project-id.firebaseio.com", // Change to your Firebase project ID
 });
 
 const db = admin.firestore();
