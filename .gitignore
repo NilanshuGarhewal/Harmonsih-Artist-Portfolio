@@ -12,3 +12,4 @@ firebase-key.json
 
 note.txt
 **/.DS_Store
+.env

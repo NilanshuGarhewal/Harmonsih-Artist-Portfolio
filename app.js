@@ -9,12 +9,14 @@ const path = require("path");
 
 const port = 8080;
 
+require("dotenv").config(); // Load .env variables
+
 // ----------------------------
 // 3️⃣ Firebase Firestore Setup
 const admin = require("firebase-admin");
 
 // Initialize Firebase Admin SDK
-//const serviceAccount = require("./firebase-key.json"); // Update this path
+// const serviceAccount = require("./firebase-key.json"); // Update this path
 // const serviceAccount = JSON.parse(process.env.FIREBASE_CREDENTIALS); // Update this path
 
 const serviceAccount = JSON.parse(process.env.FIREBASE_CREDENTIALS);
