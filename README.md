@@ -6,9 +6,9 @@ Welcome to **Harmonish - Music Artist Portfolio**, a personal website showcasing
 
 ## 🌟 Features
 
-- **🎶 Dynamic Music List** – Songs are stored in a JSON file and fetched dynamically.
-- **📄 Easy Updates** – Just update the `songs.json` file in GitHub, and the site will auto-refresh.
-- **🎨 Clean & Minimal Design** – Aesthetic layout with dark mode styling.
+- **🎶 Dynamic Music List** – Songs are stored in a FIREBASE and fetched dynamically.
+- **📄 Easy Updates** – Just update the `firebase database`, and the site will auto-refresh.
+- **🎨 Clean & Minimal Design** – Aesthetic layout.
 - **💨 Lightweight & Fast** – No backend needed, just HTML, CSS, and JavaScript.
 
 ---
